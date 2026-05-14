@@ -121,7 +121,13 @@
   <li><strong>协作模式：</strong>首先将完整的产品需求以结构化文档（约 2,000 字）形式提供，包含核心功能、技术实现细节、system prompt 全文、示例文本和额外要求。Claude Code 一次性生成完整的 <code>index.html</code> 文件。随后通过多轮对话进行迭代：修改字数上限、扩展 system prompt（新增 Tobias Keiling 教授参照、哲学限定条款）、完善示例文本、调整界面文案等。每次修改后立即在浏览器中测试。</li>
   <li><strong>API 服务：</strong>DeepSeek API（OpenAI 兼容接口），模型 deepseek-chat。</li>
   <li><strong>开发周期：</strong>约 2 天，累计约 15–20 轮对话迭代。</li>
+  <li><strong>自然语言指令：</strong>项目始于一份精心撰写的自然语言 Prompt 文档（约 2,000 字），明确涵盖学术规范、哲学限定（海德格尔与德里达参照系）、输出格式要求及示例文本。Claude Code 在阅读该指令后，一次生成完整的 <code>index.html</code> 单页应用，后续通过多轮对话迭代完善。以下为自然语言指令文档截图：</li>
 </ul>
+
+<div class="screenshot">
+  <img src="screenshot-5.png" alt="自然语言 Prompt 指令截图">
+  <div class="caption">▲ 自然语言 Prompt 指令：包含学术规范、哲学限定与输出格式要求</div>
+</div>
 
 <div class="screenshot">
   <img src="screenshot-1.png" alt="Claude Code 编程过程截图 1">
@@ -133,16 +139,7 @@
   <div class="caption">▲ Claude Code 编程过程：迭代调试与功能完善</div>
 </div>
 
-<h2>五、自然语言指令 Prompt 示范</h2>
-
-<p>以下为本项目核心的自然语言 Prompt 指令截图，展示了如何通过自然语言向 Claude Code 描述产品需求、学术规范与哲学限定，使 AI 精准理解并生成符合欧陆哲学传统的写作反馈工具。</p>
-
-<div class="screenshot">
-  <img src="screenshot-5.png" alt="自然语言 Prompt 指令截图">
-  <div class="caption">▲ 自然语言 Prompt 指令：包含学术规范、哲学限定与输出格式要求</div>
-</div>
-
-<h2>六、体验入口</h2>
+<h2>五、体验入口</h2>
 
 <p><strong>在线体验：</strong></p>
 <ul>
@@ -167,7 +164,7 @@
   <div class="caption">▲ Web 应用界面：反馈结果展开与复制功能</div>
 </div>
 
-<h2>七、反思</h2>
+<h2>六、反思</h2>
 
 <p>这仍然是一个初步项目，需要后续的调试与完善。在实际测试中，AI 反馈偶有呈现不完全贴合学术规范的问题——例如，某些术语界定未能完全达到欧陆哲学的严格标准，或对特定领域话题（如海德格尔式的存在论差异、德里达式的书写逻辑）的把握尚不够精准。这些问题源于大语言模型对哲学概念的"泛化"理解与学科内部精细分化之间的张力。</p>
 

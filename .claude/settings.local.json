@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\26433\\\\Desktop\\\\vibe coding\\\\gen.ps1\")"
+    ]
+  }
+}
